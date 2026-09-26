@@ -73,6 +73,7 @@
     @media(max-width:560px){.wrap{width:min(100% - 22px,1180px)}h1{font-size:2.55rem}.hero{padding-top:30px}.tabs{overflow:visible;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.tab{white-space:normal;padding:10px 7px;text-align:center}.fact-grid,.plan-grid{grid-template-columns:1fr}.card{padding:18px}.day{grid-template-columns:58px 1fr}.day span:nth-child(3),.day span:nth-child(4){grid-column:2}.rail{grid-template-columns:82px 1fr;gap:9px}.pattern{display:block}.pattern thead{display:none}.pattern tbody,.pattern tr,.pattern td{display:block}.pattern tr{border-bottom:1px solid var(--line);padding:8px 0}.pattern td{border:0;padding:3px 0;text-align:left!important}.pattern td:before{content:attr(data-label) ": ";font-weight:700;color:var(--muted)}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
+<link rel="stylesheet" href="assets/topics.css">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -273,6 +274,17 @@
 })();
 </script>
 
+<!-- ==================== #topics — topic library (study material) ==================== -->
+<section class="topic-lib-sec" id="topics" aria-label="Study material by topic">
+<div style="max-width:1180px;margin:0 auto;padding:0 20px">
+<p class="tl-kicker">Study material</p>
+<h2 class="tl-h2">Learn it topic by topic</h2>
+<p class="tl-sub">Every card below opens a full study page for that topic — a plain-language explanation, key facts and tables, diagrams, and quick-revision questions with answers. The practice papers at the end are full timed mocks with instant scores and complete answer keys. Everything runs in your browser; nothing is sent anywhere.</p>
+<div id="topic-lib"></div>
+</div>
+</section>
+<script src="assets/topics-railways.js"></script>
+<script src="assets/topics.js"></script>
 <section class="eph-comments" id="comments" aria-label="Comments and suggestions">
   <h2>Comments &amp; suggestions</h2>
   <p class="eph-comments-note">Spotted a mistake, an outdated date, or a missing topic? Leave a comment below &mdash; it helps improve this page for everyone.</p>
