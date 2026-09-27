@@ -140,6 +140,7 @@
   <button class="tab" data-panel="oneliners">One-liners</button>
   <button class="tab" data-panel="capsules">Capsules</button>
   <button class="tab" data-panel="resources">Resources</button>
+  <button class="tab" data-panel="important-videos">Videos</button>
   <button class="tab" data-panel="quiz">Practice test</button>
   <button class="tab" data-panel="plan">6-week plan</button>
 </div></nav>
@@ -1154,6 +1155,386 @@
     <div class="notice"><strong>Final 7 days:</strong> do not chase new books or channels. Revise formulas, error logs and current notes; simulate the exam at the same time of day when possible.</div>
   </section>
 </main>
+<!-- IMPORTANT VIDEOS (railways-prep)
+     INTEGRATION: paste this <section> immediately BEFORE the <footer> element in index.html,
+     and add a "Videos" link (href="#important-videos") to the main nav menu. -->
+<section id="important-videos" class="panel">
+<style>
+/* Important Videos — scoped to #important-videos */
+#important-videos{padding:56px 20px;max-width:1180px;margin:0 auto;color:#e8ecf4}
+#important-videos .rrbv-kicker{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#8b93a7;margin:0 0 8px}
+#important-videos h2{font-size:2rem;margin:0 0 8px;color:#fff}
+#important-videos .rrbv-sub{color:#aab2c5;margin:0 0 22px;line-height:1.55}
+#important-videos .rrbv-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+#important-videos .rrbv-filter{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#dfe5f2;
+  border-radius:999px;padding:7px 15px;font-size:.85rem;cursor:pointer;transition:background .2s,border-color .2s}
+#important-videos .rrbv-filter:hover{border-color:rgba(255,255,255,.35)}
+#important-videos .rrbv-filter[aria-pressed="true"]{background:#fff;color:#111;border-color:#fff;font-weight:600}
+#important-videos .rrbv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:18px}
+#important-videos .rrbv-card{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09);border-radius:14px;
+  overflow:hidden;cursor:pointer;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;outline:none}
+#important-videos .rrbv-card:hover,#important-videos .rrbv-card:focus{transform:translateY(-4px);
+  border-color:rgba(255,255,255,.28);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+#important-videos .rrbv-media{position:relative;aspect-ratio:16/9;background:#000}
+#important-videos .rrbv-media img{width:100%;height:100%;object-fit:cover;display:block}
+#important-videos .rrbv-playbtn{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(transparent 55%,rgba(0,0,0,.45))}
+#important-videos .rrbv-playbtn span{width:58px;height:58px;border-radius:50%;background:rgba(10,10,12,.72);
+  border:1px solid rgba(255,255,255,.55);position:relative;transition:transform .18s ease,background .18s ease}
+#important-videos .rrbv-card:hover .rrbv-playbtn span{transform:scale(1.1);background:#e11d48;border-color:#e11d48}
+#important-videos .rrbv-playbtn span::after{content:"";position:absolute;left:23px;top:18px;
+  border-left:16px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
+#important-videos .rrbv-badge{position:absolute;top:10px;right:10px;background:rgba(8,8,10,.78);color:#fff;
+  font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.25)}
+#important-videos .rrbv-badge.kind-playlist{background:rgba(225,29,72,.85);border-color:#e11d48}
+#important-videos .rrbv-body{padding:14px 15px 16px}
+#important-videos .rrbv-topic{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;border-radius:6px;padding:3px 9px;margin-bottom:9px}
+#important-videos .rrbv-title{font-size:.96rem;line-height:1.45;margin:0 0 9px;color:#f2f5fb;font-weight:600}
+#important-videos .rrbv-channel{font-size:.8rem;color:#98a1b6;margin:0}
+#important-videos .rrbv-note{margin-top:22px;font-size:.82rem;color:#8b93a7;line-height:1.6}
+#important-videos .rrbv-hidden{display:none!important}
+</style>
+<p class="rrbv-kicker">Watch &amp; revise</p>
+<h2>Important Videos</h2>
+<p class="rrbv-sub">Hand-picked free classes from railway-prep channels — full playlists and single-shot lectures.
+Tap any card to play the official YouTube video right here (no new tab).</p>
+<div class="rrbv-filters" role="group" aria-label="Filter videos by subject">
+<button type="button" class="rrbv-filter" data-filter="All" aria-pressed="true">All</button><button type="button" class="rrbv-filter" data-filter="Mathematics" aria-pressed="false">Mathematics</button><button type="button" class="rrbv-filter" data-filter="Reasoning" aria-pressed="false">Reasoning</button><button type="button" class="rrbv-filter" data-filter="General Science" aria-pressed="false">General Science</button><button type="button" class="rrbv-filter" data-filter="Railway GK" aria-pressed="false">Railway GK</button><button type="button" class="rrbv-filter" data-filter="All Subjects" aria-pressed="false">All Subjects</button>
+</div>
+<div class="rrbv-grid">
+<article class="rrbv-card" data-kind="video" data-vid="SAO4fZ96fF0" data-topic="Mathematics" tabindex="0" role="button" aria-label="Play: RRB Group D 2026 Maths Marathon | Complete Maths in 12 Hours 🔥 | All Chapters One Shot | Anant Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/SAO4fZ96fF0/hqdefault.jpg" loading="lazy" alt="RRB Group D 2026 Maths Marathon | Complete Maths in 12 Hours 🔥 | All Chapters One Shot | Anant Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#4da3ff;background:#4da3ff1f;border:1px solid #4da3ff55">Mathematics</span>
+    <h3 class="rrbv-title">RRB Group D 2026 Maths Marathon | Complete Maths in 12 Hours 🔥 | All Chapters One Shot | Anant Sir</h3>
+    <p class="rrbv-channel">📺 Railway KD Live</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="4fVk__Tp8Fg" data-topic="Mathematics" tabindex="0" role="button" aria-label="Play: RRB Group D 2026 Maths | Profit &amp; Loss Complete One Shot | 2021-2026 PYQs + Tricks | Anant Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/4fVk__Tp8Fg/hqdefault.jpg" loading="lazy" alt="RRB Group D 2026 Maths | Profit &amp; Loss Complete One Shot | 2021-2026 PYQs + Tricks | Anant Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#4da3ff;background:#4da3ff1f;border:1px solid #4da3ff55">Mathematics</span>
+    <h3 class="rrbv-title">RRB Group D 2026 Maths | Profit &amp; Loss Complete One Shot | 2021-2026 PYQs + Tricks | Anant Sir</h3>
+    <p class="rrbv-channel">📺 Railway KD Live</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="BDhzgdnj12M" data-topic="Mathematics" tabindex="0" role="button" aria-label="Play: Maths short tricks in hindi For - Railway Group D, SSC GD, UP POLICE, UPSSSC PET, by Ajay Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/BDhzgdnj12M/hqdefault.jpg" loading="lazy" alt="Maths short tricks in hindi For - Railway Group D, SSC GD, UP POLICE, UPSSSC PET, by Ajay Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#4da3ff;background:#4da3ff1f;border:1px solid #4da3ff55">Mathematics</span>
+    <h3 class="rrbv-title">Maths short tricks in hindi For - Railway Group D, SSC GD, UP POLICE, UPSSSC PET, by Ajay Sir</h3>
+    <p class="rrbv-channel">📺 SSC MAKER</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="GJQNe2PEzp4" data-topic="Mathematics" tabindex="0" role="button" aria-label="Play: RRB Group D 2026-27 | RRB Group D Math Mock Test | RRB Group D Maths Classes By Hariom Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/GJQNe2PEzp4/hqdefault.jpg" loading="lazy" alt="RRB Group D 2026-27 | RRB Group D Math Mock Test | RRB Group D Maths Classes By Hariom Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#4da3ff;background:#4da3ff1f;border:1px solid #4da3ff55">Mathematics</span>
+    <h3 class="rrbv-title">RRB Group D 2026-27 | RRB Group D Math Mock Test | RRB Group D Maths Classes By Hariom Sir</h3>
+    <p class="rrbv-channel">📺 Adda247 Railway Exams</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="3aw5a8L2nJE" data-topic="Mathematics" tabindex="0" role="button" aria-label="Play: Average for All Railway Exams 2026 | Average #1 for Group D, NTPC, ALP, Tech &amp; JE Exams | Ashish Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/3aw5a8L2nJE/hqdefault.jpg" loading="lazy" alt="Average for All Railway Exams 2026 | Average #1 for Group D, NTPC, ALP, Tech &amp; JE Exams | Ashish Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#4da3ff;background:#4da3ff1f;border:1px solid #4da3ff55">Mathematics</span>
+    <h3 class="rrbv-title">Average for All Railway Exams 2026 | Average #1 for Group D, NTPC, ALP, Tech &amp; JE Exams | Ashish Sir</h3>
+    <p class="rrbv-channel">📺 Adda247 Railway Exams</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="q7zBRMJmKS0" data-topic="Reasoning" tabindex="0" role="button" aria-label="Play: Complete Reasoning (श्रृंखला) Series | Day 1 | RRB Group D, ALP, JE, NTPC | Vikramjeet Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/q7zBRMJmKS0/hqdefault.jpg" loading="lazy" alt="Complete Reasoning (श्रृंखला) Series | Day 1 | RRB Group D, ALP, JE, NTPC | Vikramjeet Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#b07bff;background:#b07bff1f;border:1px solid #b07bff55">Reasoning</span>
+    <h3 class="rrbv-title">Complete Reasoning (श्रृंखला) Series | Day 1 | RRB Group D, ALP, JE, NTPC | Vikramjeet Sir</h3>
+    <p class="rrbv-channel">📺 SelectionWay Railway</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="XVtaVTOC24E" data-topic="Reasoning" tabindex="0" role="button" aria-label="Play: Reasoning Short Tricks in hindi Part - 3 For - #Railway Group D, NTPC, UP POLICE, etc. By SSC MAKER">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/XVtaVTOC24E/hqdefault.jpg" loading="lazy" alt="Reasoning Short Tricks in hindi Part - 3 For - #Railway Group D, NTPC, UP POLICE, etc. By SSC MAKER">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#b07bff;background:#b07bff1f;border:1px solid #b07bff55">Reasoning</span>
+    <h3 class="rrbv-title">Reasoning Short Tricks in hindi Part - 3 For - #Railway Group D, NTPC, UP POLICE, etc. By SSC MAKER</h3>
+    <p class="rrbv-channel">📺 SSC MAKER</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="mOyXRK_lSJ0" data-topic="Reasoning" tabindex="0" role="button" aria-label="Play: Reasoning Order &amp; Ranking | Railway Free PYQ Series | ALP, Technician, JE, NTPC | Vikramjeet Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/mOyXRK_lSJ0/hqdefault.jpg" loading="lazy" alt="Reasoning Order &amp; Ranking | Railway Free PYQ Series | ALP, Technician, JE, NTPC | Vikramjeet Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#b07bff;background:#b07bff1f;border:1px solid #b07bff55">Reasoning</span>
+    <h3 class="rrbv-title">Reasoning Order &amp; Ranking | Railway Free PYQ Series | ALP, Technician, JE, NTPC | Vikramjeet Sir</h3>
+    <p class="rrbv-channel">📺 SelectionWay Railway</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="Rx7QJrdo7y4" data-topic="Reasoning" tabindex="0" role="button" aria-label="Play: RRB ALP 2026-27 | Reasoning Previous Year Questions (PYQs) 🎯 Live Class-02 by Deva Raj Sir!">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/Rx7QJrdo7y4/hqdefault.jpg" loading="lazy" alt="RRB ALP 2026-27 | Reasoning Previous Year Questions (PYQs) 🎯 Live Class-02 by Deva Raj Sir!">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#b07bff;background:#b07bff1f;border:1px solid #b07bff55">Reasoning</span>
+    <h3 class="rrbv-title">RRB ALP 2026-27 | Reasoning Previous Year Questions (PYQs) 🎯 Live Class-02 by Deva Raj Sir!</h3>
+    <p class="rrbv-channel">📺 CompeteMinds</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="playlist" data-list="PL6iZj5NWyEf4r4ocUO_lSDpp-IG--SLmF" data-topic="Reasoning" tabindex="0" role="button" aria-label="Play: Complete Railway Reasoning Playlist 2025-26 | SAMADHAN Series By Bharat Sir (15 videos)">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/TQ2WLwD5_Xo/hqdefault.jpg" loading="lazy" alt="Complete Railway Reasoning Playlist 2025-26 | SAMADHAN Series By Bharat Sir (15 videos)">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-playlist">Playlist</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#b07bff;background:#b07bff1f;border:1px solid #b07bff55">Reasoning</span>
+    <h3 class="rrbv-title">Complete Railway Reasoning Playlist 2025-26 | SAMADHAN Series By Bharat Sir (15 videos)</h3>
+    <p class="rrbv-channel">📺 Careerwill Reasoning</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="bd4Rmp-Y2jc" data-topic="General Science" tabindex="0" role="button" aria-label="Play: Railway Science One Shot Marathon | RRB Group D NTPC ALP Science Complete Revision | By Neeraj Mam">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/bd4Rmp-Y2jc/hqdefault.jpg" loading="lazy" alt="Railway Science One Shot Marathon | RRB Group D NTPC ALP Science Complete Revision | By Neeraj Mam">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">Railway Science One Shot Marathon | RRB Group D NTPC ALP Science Complete Revision | By Neeraj Mam</h3>
+    <p class="rrbv-channel">📺 Adda247 Railway Exams</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="YWT3CYV7Q8o" data-topic="General Science" tabindex="0" role="button" aria-label="Play: RRB Tech/NTPC Science | Railway 2024-26 PYQs Science Marathon | NTPC Science Marathon Lalit Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/YWT3CYV7Q8o/hqdefault.jpg" loading="lazy" alt="RRB Tech/NTPC Science | Railway 2024-26 PYQs Science Marathon | NTPC Science Marathon Lalit Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">RRB Tech/NTPC Science | Railway 2024-26 PYQs Science Marathon | NTPC Science Marathon Lalit Sir</h3>
+    <p class="rrbv-channel">📺 Railway Testbook</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="Xh6vCF88p28" data-topic="General Science" tabindex="0" role="button" aria-label="Play: RRB ALP 2026: Science - Important Chemical Reactions 🧪 | Live Class for Technician &amp; ALP 🚂">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/Xh6vCF88p28/hqdefault.jpg" loading="lazy" alt="RRB ALP 2026: Science - Important Chemical Reactions 🧪 | Live Class for Technician &amp; ALP 🚂">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">RRB ALP 2026: Science - Important Chemical Reactions 🧪 | Live Class for Technician &amp; ALP 🚂</h3>
+    <p class="rrbv-channel">📺 Fiziks by K Ravi</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="xdpUK2T8fOY" data-topic="General Science" tabindex="0" role="button" aria-label="Play: Cell (कोशिका) | Complete Biology Marathon | Railway Science FREE Batch 2026 | Day 1 | Radhika Ma’am">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/xdpUK2T8fOY/hqdefault.jpg" loading="lazy" alt="Cell (कोशिका) | Complete Biology Marathon | Railway Science FREE Batch 2026 | Day 1 | Radhika Ma’am">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">Cell (कोशिका) | Complete Biology Marathon | Railway Science FREE Batch 2026 | Day 1 | Radhika Ma’am</h3>
+    <p class="rrbv-channel">📺 SelectionWay Railway</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="playlist" data-list="PL22tVRPdgORFwSJeUsGNEiyKuMUxEgCBn" data-topic="General Science" tabindex="0" role="button" aria-label="Play: RRB Group D Science Classes 2026 | By Muskan Ma&#x27;am (15 videos)">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/S-DwIBIIliw/hqdefault.jpg" loading="lazy" alt="RRB Group D Science Classes 2026 | By Muskan Ma&#x27;am (15 videos)">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-playlist">Playlist</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">RRB Group D Science Classes 2026 | By Muskan Ma&#x27;am (15 videos)</h3>
+    <p class="rrbv-channel">📺 SSC Wallah</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="playlist" data-list="PLNV-Mfj2Ek05hL5915YPpJLdfOCTncDVw" data-topic="General Science" tabindex="0" role="button" aria-label="Play: RRB NTPC - General Science (15 videos)">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/YKUuXMtxJYE/hqdefault.jpg" loading="lazy" alt="RRB NTPC - General Science (15 videos)">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-playlist">Playlist</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">RRB NTPC - General Science (15 videos)</h3>
+    <p class="rrbv-channel">📺 Shiksha Shree</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="playlist" data-list="PLcTTtDZdbv_CH56Y-4uZ9EpBJieNkB3Na" data-topic="General Science" tabindex="0" role="button" aria-label="Play: Neeraj Sir Complete Chemistry (15 videos)">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/nl88ftfAr98/hqdefault.jpg" loading="lazy" alt="Neeraj Sir Complete Chemistry (15 videos)">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-playlist">Playlist</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">Neeraj Sir Complete Chemistry (15 videos)</h3>
+    <p class="rrbv-channel">📺 Vinu P</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="playlist" data-list="PLuJI3mHxkpCV3eJAxkxdPCigs-EoIH70M" data-topic="General Science" tabindex="0" role="button" aria-label="Play: RRB Group D Science – AWO/TPO PYQ Series | By Bheesham Sir (12 videos)">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/d-Cc3f_LFX8/hqdefault.jpg" loading="lazy" alt="RRB Group D Science – AWO/TPO PYQ Series | By Bheesham Sir (12 videos)">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-playlist">Playlist</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#3ddc84;background:#3ddc841f;border:1px solid #3ddc8455">General Science</span>
+    <h3 class="rrbv-title">RRB Group D Science – AWO/TPO PYQ Series | By Bheesham Sir (12 videos)</h3>
+    <p class="rrbv-channel">📺 ScaleUp Selections</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="5L6Enlop_TY" data-topic="Railway GK" tabindex="0" role="button" aria-label="Play: Railway GK GS 2026 | Complete Free Gift for RRB NTPC, Group D, ALP, Technician | Gagan Pratap Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/5L6Enlop_TY/hqdefault.jpg" loading="lazy" alt="Railway GK GS 2026 | Complete Free Gift for RRB NTPC, Group D, ALP, Technician | Gagan Pratap Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#ffb84d;background:#ffb84d1f;border:1px solid #ffb84d55">Railway GK</span>
+    <h3 class="rrbv-title">Railway GK GS 2026 | Complete Free Gift for RRB NTPC, Group D, ALP, Technician | Gagan Pratap Sir</h3>
+    <p class="rrbv-channel">📺 SelectionWay Railway</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="dkc56zquZQw" data-topic="Railway GK" tabindex="0" role="button" aria-label="Play: Railway NTPC 2019 (CBT-1) | Static GK: National Park &amp; Important Days | By Ravi Sir">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/dkc56zquZQw/hqdefault.jpg" loading="lazy" alt="Railway NTPC 2019 (CBT-1) | Static GK: National Park &amp; Important Days | By Ravi Sir">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#ffb84d;background:#ffb84d1f;border:1px solid #ffb84d55">Railway GK</span>
+    <h3 class="rrbv-title">Railway NTPC 2019 (CBT-1) | Static GK: National Park &amp; Important Days | By Ravi Sir</h3>
+    <p class="rrbv-channel">📺 Exampur</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="video" data-vid="Er_euk6LBMk" data-topic="Railway GK" tabindex="0" role="button" aria-label="Play: GKToday Current Affairs 🎯 22 September, 2026">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/Er_euk6LBMk/hqdefault.jpg" loading="lazy" alt="GKToday Current Affairs 🎯 22 September, 2026">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-video">Video</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#ffb84d;background:#ffb84d1f;border:1px solid #ffb84d55">Railway GK</span>
+    <h3 class="rrbv-title">GKToday Current Affairs 🎯 22 September, 2026</h3>
+    <p class="rrbv-channel">📺 GKToday</p>
+  </div>
+</article>
+<article class="rrbv-card" data-kind="playlist" data-list="PLNcySWEjd6q9XD3pBpbs8ADCOcNJRaZ2f" data-topic="All Subjects" tabindex="0" role="button" aria-label="Play: Sahil Sir Group D FREE Safalta Express Batch: Maths + Science + GK (16 videos)">
+  <div class="rrbv-media">
+    <img src="https://i.ytimg.com/vi/7ECDy7D52Vg/hqdefault.jpg" loading="lazy" alt="Sahil Sir Group D FREE Safalta Express Batch: Maths + Science + GK (16 videos)">
+    <div class="rrbv-playbtn" aria-hidden="true"><span></span></div>
+    <span class="rrbv-badge kind-playlist">Playlist</span>
+  </div>
+  <div class="rrbv-body">
+    <span class="rrbv-topic" style="color:#ff6b8b;background:#ff6b8b1f;border:1px solid #ff6b8b55">All Subjects</span>
+    <h3 class="rrbv-title">Sahil Sir Group D FREE Safalta Express Batch: Maths + Science + GK (16 videos)</h3>
+    <p class="rrbv-channel">📺 Quick Tricks By Sahil Sir</p>
+  </div>
+</article>
+</div>
+<p class="rrbv-note">All videos embed the official YouTube player and are free to watch. Current-affairs clips are
+dated — for the exam, revise the 6–8 months before your CBT from dated notes. Report a dead link in the comments below.</p>
+<script>
+/* Important Videos player — namespaced (rrbv) */
+(function(){
+  if (window.__rrbvInit) { return; }
+  window.__rrbvInit = true;
+  function rrbvPlay(card){
+    var media = card.querySelector('.rrbv-media');
+    if (!media || media.getAttribute('data-rrbv-live')) { return; }
+    var kind = card.getAttribute('data-kind');
+    var src = (kind === 'playlist')
+      ? 'https://www.youtube-nocookie.com/embed/videoseries?list=' + encodeURIComponent(card.getAttribute('data-list')) + '&autoplay=1'
+      : 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(card.getAttribute('data-vid')) + '?autoplay=1&rel=0';
+    var frame = document.createElement('iframe');
+    frame.setAttribute('src', src);
+    var t = card.querySelector('.rrbv-title');
+    frame.setAttribute('title', t ? t.textContent : 'Video player');
+    frame.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    frame.setAttribute('allowfullscreen', '');
+    frame.setAttribute('frameborder', '0');
+    frame.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
+    media.setAttribute('data-rrbv-live', '1');
+    media.innerHTML = '';
+    media.appendChild(frame);
+  }
+  function rrbvBind(){
+    var root = document.getElementById('important-videos');
+    if (!root) { return; }
+    var cards = root.querySelectorAll('.rrbv-card');
+    for (var i = 0; i < cards.length; i++) {
+      (function(card){
+        if (card.getAttribute('data-rrbv-bound')) { return; }
+        card.setAttribute('data-rrbv-bound', '1');
+        card.addEventListener('click', function(){ rrbvPlay(card); });
+        card.addEventListener('keydown', function(e){
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); rrbvPlay(card); }
+        });
+      })(cards[i]);
+    }
+    var btns = root.querySelectorAll('.rrbv-filter');
+    for (var j = 0; j < btns.length; j++) {
+      (function(btn){
+        if (btn.getAttribute('data-rrbv-bound')) { return; }
+        btn.setAttribute('data-rrbv-bound', '1');
+        btn.addEventListener('click', function(){
+          for (var k = 0; k < btns.length; k++) { btns[k].setAttribute('aria-pressed', 'false'); }
+          btn.setAttribute('aria-pressed', 'true');
+          var f = btn.getAttribute('data-filter');
+          for (var m = 0; m < cards.length; m++) {
+            var show = (f === 'All') || (cards[m].getAttribute('data-topic') === f);
+            cards[m].classList.toggle('rrbv-hidden', !show);
+          }
+        });
+      })(btns[j]);
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', rrbvBind);
+  } else {
+    rrbvBind();
+  }
+})();
+</script>
+</section>
+
 <footer><div class="wrap"><strong>Pattern references</strong><div class="sources"><a href="https://timesofindia.indiatimes.com/education/news/rrb-ntpc-recruitment-2024-notification-out-for-more-than-11500-posts-check-vacancy-details-salary-selection-process-and-more/articleshow/113184104.cms" target="_blank" rel="noopener">NTPC pattern summary</a><a href="https://www.testpaper.org/2025/03/rrb-group-d-exam-pattern.html" target="_blank" rel="noopener">Group D pattern summary</a><a href="https://www.rrbcdg.gov.in/uploads/2025/01-ALP/Detailed_CEN_01-2025_ALP.pdf?txid=6a039ffaa624cf1d9d81812f" target="_blank" rel="noopener">Official ALP CEN PDF</a></div><p>Exam structures can change by Centralised Employment Notice. This study hub teaches the common syllabus; the current official notice governs eligibility, dates and selection stages.</p></div></footer>
 <script>
 (function(){
